@@ -16,6 +16,21 @@
 		3846CE922579708800FFCE6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3846CE902579708800FFCE6D /* LaunchScreen.storyboard */; };
 		3846CE9D2579708800FFCE6D /* PotholeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3846CE9C2579708800FFCE6D /* PotholeTests.swift */; };
 		3846CEA82579708800FFCE6D /* PotholeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3846CEA72579708800FFCE6D /* PotholeUITests.swift */; };
+		388B16BE257972AE00DE0EF7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B16BD257972AE00DE0EF7 /* MapView.swift */; };
+		388B16BF257972AE00DE0EF7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B16BD257972AE00DE0EF7 /* MapView.swift */; };
+		388B16C0257972AE00DE0EF7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B16BD257972AE00DE0EF7 /* MapView.swift */; };
+		388B16C6257974AB00DE0EF7 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B16C5257974AB00DE0EF7 /* Location.swift */; };
+		388B16C7257974AB00DE0EF7 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B16C5257974AB00DE0EF7 /* Location.swift */; };
+		388B16C8257974AB00DE0EF7 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B16C5257974AB00DE0EF7 /* Location.swift */; };
+		388B16D025797D4500DE0EF7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B16CF25797D4400DE0EF7 /* Extensions.swift */; };
+		388B16D125797D4500DE0EF7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B16CF25797D4400DE0EF7 /* Extensions.swift */; };
+		388B16D225797D4500DE0EF7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B16CF25797D4400DE0EF7 /* Extensions.swift */; };
+		388B16D82579814900DE0EF7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B16D72579814900DE0EF7 /* LocationManager.swift */; };
+		388B16D92579814900DE0EF7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B16D72579814900DE0EF7 /* LocationManager.swift */; };
+		388B16DA2579814900DE0EF7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B16D72579814900DE0EF7 /* LocationManager.swift */; };
+		388B16E22579821500DE0EF7 /* LocationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B16E12579821500DE0EF7 /* LocationProtocols.swift */; };
+		388B16E32579821500DE0EF7 /* LocationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B16E12579821500DE0EF7 /* LocationProtocols.swift */; };
+		388B16E42579821500DE0EF7 /* LocationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388B16E12579821500DE0EF7 /* LocationProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +66,11 @@
 		3846CEA32579708800FFCE6D /* PotholeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PotholeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3846CEA72579708800FFCE6D /* PotholeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotholeUITests.swift; sourceTree = "<group>"; };
 		3846CEA92579708800FFCE6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		388B16BD257972AE00DE0EF7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		388B16C5257974AB00DE0EF7 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		388B16CF25797D4400DE0EF7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		388B16D72579814900DE0EF7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		388B16E12579821500DE0EF7 /* LocationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +121,9 @@
 		3846CE812579708500FFCE6D /* Pothole */ = {
 			isa = PBXGroup;
 			children = (
+				388B16D62579812D00DE0EF7 /* Location */,
+				388B16C42579748500DE0EF7 /* Model */,
+				3846CEB8257970C200FFCE6D /* Map */,
 				3846CE822579708500FFCE6D /* AppDelegate.swift */,
 				3846CE842579708500FFCE6D /* SceneDelegate.swift */,
 				3846CE862579708500FFCE6D /* ContentView.swift */,
@@ -137,6 +160,32 @@
 				3846CEA92579708800FFCE6D /* Info.plist */,
 			);
 			path = PotholeUITests;
+			sourceTree = "<group>";
+		};
+		3846CEB8257970C200FFCE6D /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				388B16BD257972AE00DE0EF7 /* MapView.swift */,
+				388B16CF25797D4400DE0EF7 /* Extensions.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		388B16C42579748500DE0EF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				388B16C5257974AB00DE0EF7 /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		388B16D62579812D00DE0EF7 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				388B16D72579814900DE0EF7 /* LocationManager.swift */,
+				388B16E12579821500DE0EF7 /* LocationProtocols.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +320,13 @@
 			files = (
 				3846CE832579708500FFCE6D /* AppDelegate.swift in Sources */,
 				3846CE852579708500FFCE6D /* SceneDelegate.swift in Sources */,
+				388B16D82579814900DE0EF7 /* LocationManager.swift in Sources */,
+				388B16E22579821500DE0EF7 /* LocationProtocols.swift in Sources */,
+				388B16BE257972AE00DE0EF7 /* MapView.swift in Sources */,
 				3846CE872579708500FFCE6D /* ContentView.swift in Sources */,
+				388B16C6257974AB00DE0EF7 /* Location.swift in Sources */,
 				3846CE8A2579708500FFCE6D /* Pothole.xcdatamodeld in Sources */,
+				388B16D025797D4500DE0EF7 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +334,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				388B16E32579821500DE0EF7 /* LocationProtocols.swift in Sources */,
 				3846CE9D2579708800FFCE6D /* PotholeTests.swift in Sources */,
+				388B16C7257974AB00DE0EF7 /* Location.swift in Sources */,
+				388B16D92579814900DE0EF7 /* LocationManager.swift in Sources */,
+				388B16BF257972AE00DE0EF7 /* MapView.swift in Sources */,
+				388B16D125797D4500DE0EF7 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +347,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				388B16E42579821500DE0EF7 /* LocationProtocols.swift in Sources */,
 				3846CEA82579708800FFCE6D /* PotholeUITests.swift in Sources */,
+				388B16C8257974AB00DE0EF7 /* Location.swift in Sources */,
+				388B16DA2579814900DE0EF7 /* LocationManager.swift in Sources */,
+				388B16C0257972AE00DE0EF7 /* MapView.swift in Sources */,
+				388B16D225797D4500DE0EF7 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
